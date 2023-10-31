@@ -1,0 +1,36 @@
+[18-Oct-2023 12:12:59 UTC] Cron reschedule event error for hook: action_scheduler_run_queue, Error code: invalid_schedule, Error message: L’évènement planifié n’existe pas., Data: {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[18-Oct-2023 12:13:01 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(310): init_wysija_cron('')
+#7 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-settings.php(632): do_action('init')
+#10 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-config.php(103): require_once('/Users/nassimek...')
+#11 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-load.php(50): require_once('/Users/nassimek...')
+#12 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-cron.php(46): require_once('/Users/nassimek...')
+#13 {main}
+  thrown in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[18-Oct-2023 12:13:06 UTC] Cron reschedule event error for hook: woocommerce_geoip_updater, Error code: invalid_schedule, Error message: L’évènement planifié n’existe pas., Data: {"schedule":"fifteendays","args":[],"interval":1296000}
+[31-Oct-2023 02:17:10 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(310): init_wysija_cron('')
+#7 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(334): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-settings.php(632): do_action('init')
+#10 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-config.php(103): require_once('/Users/nassimek...')
+#11 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-load.php(50): require_once('/Users/nassimek...')
+#12 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-cron.php(46): require_once('/Users/nassimek...')
+#13 {main}
+  thrown in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
