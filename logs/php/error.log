@@ -34,3 +34,96 @@ Stack trace:
 #12 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-cron.php(46): require_once('/Users/nassimek...')
 #13 {main}
   thrown in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[31-Oct-2023 13:50:30 UTC] [ERROR] : Cache config file /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/wpo-cache/config/config-chic-dressing.local.php is not present
+[08-Nov-2023 14:12:35 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/update.php on line 449
+[08-Nov-2023 14:12:35 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/update.php on line 730
+[08-Nov-2023 14:12:38 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-config.php(86): require_once('/Users/nassimek...')
+#11 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-load.php(50): require_once('/Users/nassimek...')
+#12 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-cron.php(46): require_once('/Users/nassimek...')
+#13 {main}
+  thrown in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[08-Nov-2023 14:12:38 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-config.php(86): require_once('/Users/nassimek...')
+#11 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-load.php(50): require_once('/Users/nassimek...')
+#12 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-cron.php(46): require_once('/Users/nassimek...')
+#13 {main}
+  thrown in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[09-Nov-2023 01:43:43 UTC] PHP Parse error:  syntax error, unexpected token "*", expecting end of file in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php on line 10
+[09-Nov-2023 13:06:43 UTC] PHP Parse error:  Unterminated comment starting line 64 in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php on line 64
+[09-Nov-2023 13:06:43 UTC] PHP Parse error:  Unterminated comment starting line 64 in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php on line 64
+[09-Nov-2023 13:06:43 UTC] PHP Parse error:  Unterminated comment starting line 64 in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php on line 64
+[09-Nov-2023 13:07:05 UTC] PHP Fatal error:  Cannot redeclare ashe_playfair_font_url() (previously declared in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php:14) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/ashe/functions.php on line 235
+[09-Nov-2023 13:07:05 UTC] PHP Fatal error:  Cannot redeclare ashe_playfair_font_url() (previously declared in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php:14) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/ashe/functions.php on line 235
+[09-Nov-2023 13:09:09 UTC] PHP Fatal error:  Cannot redeclare ashe_playfair_font_url() (previously declared in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php:14) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/ashe/functions.php on line 235
+[09-Nov-2023 13:09:09 UTC] PHP Fatal error:  Cannot redeclare ashe_playfair_font_url() (previously declared in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php:14) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/ashe/functions.php on line 235
+[09-Nov-2023 13:32:03 UTC] [ERROR] : WP_CACHE constant is not present in wp-config.php
+[09-Nov-2023 13:32:03 UTC] [ERROR] : WP_CACHE constant is not present in wp-config.php
+[09-Nov-2023 13:32:03 UTC] [ERROR] : WP_CACHE constant is not present in wp-config.php
+[09-Nov-2023 13:32:03 UTC] [ERROR] : WP_CACHE constant is not present in wp-config.php
+[09-Nov-2023 13:34:03 UTC] [ERROR] : WP_CACHE constant is not present in wp-config.php
+[09-Nov-2023 13:34:03 UTC] [ERROR] : WP_CACHE constant is not present in wp-config.php
+[09-Nov-2023 15:08:41 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-config.php(86): require_once('/Users/nassimek...')
+#11 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-load.php(50): require_once('/Users/nassimek...')
+#12 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-cron.php(46): require_once('/Users/nassimek...')
+#13 {main}
+  thrown in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[09-Nov-2023 15:08:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function chicdressing_options() in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php:52
+Stack trace:
+#0 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(324): chicdressing_gfonts_scripts('')
+#1 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#2 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/script-loader.php(2262): do_action('wp_enqueue_scri...')
+#4 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(324): wp_enqueue_scripts('')
+#5 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#6 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#7 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/general-template.php(3052): do_action('wp_head')
+#8 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/ashe/header.php(8): wp_head()
+#9 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/template.php(790): require_once('/Users/nassimek...')
+#10 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/template.php(725): load_template('/Users/nassimek...', true, Array)
+#11 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/general-template.php(48): locate_template(Array, true, true, Array)
+#12 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/index.php(3): get_header()
+#13 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/template-loader.php(106): include('/Users/nassimek...')
+#14 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-blog-header.php(19): require_once('/Users/nassimek...')
+#15 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/index.php(17): require('/Users/nassimek...')
+#16 {main}
+  thrown in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php on line 52
+[09-Nov-2023 15:34:40 UTC] PHP Fatal error:  Cannot redeclare ashe_gfonts_scripts() (previously declared in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php:11) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/ashe/functions.php on line 269
+[09-Nov-2023 15:34:40 UTC] PHP Fatal error:  Cannot redeclare ashe_gfonts_scripts() (previously declared in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php:11) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/ashe/functions.php on line 269
+[09-Nov-2023 15:34:40 UTC] PHP Fatal error:  Cannot redeclare ashe_gfonts_scripts() (previously declared in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php:11) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/ashe/functions.php on line 269
+[09-Nov-2023 16:51:03 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php on line 14
+[09-Nov-2023 16:51:03 UTC] PHP Parse error:  syntax error, unexpected token "}" in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/themes/chicdressing/functions.php on line 14

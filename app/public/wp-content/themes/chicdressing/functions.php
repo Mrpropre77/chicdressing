@@ -7,7 +7,8 @@ function chicdressing_enqueue_styles() {
 
 add_filter( 'big_image_size_threshold', '__return_false' );
 
-
-
-
- 
+add_action( 'wp_print_scripts', 'dequeue_fonts_style' );
+function dequeue_fonts_style() {
+      wp_dequeue_script( 'ashe_gfonts_scripts' );
+      wp_deregister_script('ashe_gfonts_scripts');
+}
