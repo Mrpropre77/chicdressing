@@ -54,7 +54,7 @@ Text Domain:	 chicdressing
 }
 
 body .page-content, .page-content select, .page-content input, .page-content textarea, .page-content .post-author a, .page-content .ashe-widget a, .page-content .comment-author {
-    color: #a5a5a5;
+    color: #000000;
     font-size: 12px;
 }
 
@@ -70,7 +70,7 @@ body .header-logo a{
 
 .chic-bouton{
     color: #ffffff;
-    background-color: #333333;
+    background-color: #000000;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 2px;

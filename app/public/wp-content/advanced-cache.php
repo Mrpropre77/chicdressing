@@ -27,7 +27,7 @@ if (false === $plugin_location) {
 	$protocol = $_SERVER['REQUEST_SCHEME'];
 	$host = $_SERVER['HTTP_HOST'];
 	$request_uri = $_SERVER['REQUEST_URI'];
-	if (strcasecmp('http://chic-dressing.local/', $protocol . '://' . $host . $request_uri) === 0) {
+	if (strcasecmp('https://chic-dressing.local/', $protocol . '://' . $host . $request_uri) === 0) {
 		error_log('WP-Optimize: No caching took place, because the plugin location could not be found');
 	}
 } else {
