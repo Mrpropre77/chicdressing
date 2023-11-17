@@ -172,3 +172,82 @@ Stack trace:
 [13-Nov-2023 03:01:17 UTC] PHP Warning:  Undefined array key "id_form" in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/views/front/widget_nl.php on line 125
 [13-Nov-2023 03:04:58 UTC] PHP Warning:  Undefined array key "id_form" in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/views/front/widget_nl.php on line 125
 [13-Nov-2023 03:06:56 UTC] PHP Warning:  Undefined array key "id_form" in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/views/front/widget_nl.php on line 125
+[13-Nov-2023 21:33:46 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-config.php(86): require_once('/Users/nassimek...')
+#11 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-load.php(50): require_once('/Users/nassimek...')
+#12 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-cron.php(46): require_once('/Users/nassimek...')
+#13 {main}
+  thrown in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[13-Nov-2023 22:11:36 UTC] PHP Warning:  Undefined array key "id_form" in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/views/front/widget_nl.php on line 125
+[14-Nov-2023 03:21:52 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/update.php on line 211
+[14-Nov-2023 03:21:52 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/update.php on line 449
+[14-Nov-2023 03:21:52 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/update.php on line 730
+[14-Nov-2023 03:44:15 UTC] PHP Warning:  Undefined array key "id_form" in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/views/front/widget_nl.php on line 125
+[14-Nov-2023 03:53:50 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[14-Nov-2023 04:33:09 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[14-Nov-2023 05:19:12 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[14-Nov-2023 17:57:56 UTC] PHP Warning:  Undefined array key "id_form" in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/views/front/widget_nl.php on line 125
+[15-Nov-2023 00:41:30 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-config.php(86): require_once('/Users/nassimek...')
+#11 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-load.php(50): require_once('/Users/nassimek...')
+#12 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-cron.php(46): require_once('/Users/nassimek...')
+#13 {main}
+  thrown in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[16-Nov-2023 01:14:52 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-config.php(85): require_once('/Users/nassimek...')
+#11 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-load.php(50): require_once('/Users/nassimek...')
+#12 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-cron.php(46): require_once('/Users/nassimek...')
+#13 {main}
+  thrown in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[17-Nov-2023 14:08:45 UTC] PHP Fatal error:  Uncaught TypeError: implode(): Argument #2 ($array) must be of type ?array, string given in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php:161
+Stack trace:
+#0 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php(161): implode(Array, '|')
+#1 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(820): WYSIJA_help_file->clear()
+#2 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(184): WYSIJA::croned_daily()
+#3 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(120): WYSIJA_help_cron->run_scheduled_task('daily')
+#4 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/cron.php(56): WYSIJA_help_cron->check_scheduled_task(Array, 'daily')
+#5 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/core/base.php(1525): WYSIJA_help_cron->run()
+#6 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(324): init_wysija_cron('')
+#7 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#8 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#9 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-settings.php(643): do_action('init')
+#10 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-config.php(85): require_once('/Users/nassimek...')
+#11 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-load.php(50): require_once('/Users/nassimek...')
+#12 /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-cron.php(46): require_once('/Users/nassimek...')
+#13 {main}
+  thrown in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-content/plugins/wysija-newsletters/helpers/file.php on line 161
+[17-Nov-2023 15:29:49 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-admin/includes/update.php on line 154
+[17-Nov-2023 15:29:49 UTC] PHP Warning:  Une erreur imprévue est survenue. Il pourrait y avoir un problème avec WordPress.org ou la configuration de ce serveur. Si vous continuez à rencontrer ce problème, veuillez vous rendre sur les <a href="https://wpfr.net/support">forums de support</a>. (WordPress n’a pas pu établir de connexion sécurisée vers WordPress.org. Veuillez contacter l’administrateur ou l’administratrice de votre serveur.) in /Users/nassimekherbouche/Local Sites/chic-dressing/app/public/wp-includes/update.php on line 211

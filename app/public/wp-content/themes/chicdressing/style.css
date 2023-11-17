@@ -18,6 +18,7 @@ Text Domain:	 chicdressing
     font-family: "Open Sans";
       src: local("Open Sans"),
     url("./assets/fonts/OpenSans-Regular.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
@@ -25,12 +26,14 @@ Text Domain:	 chicdressing
     font-weight: 700;
       src: local("Open Sans Bold"),
     url("./assets/fonts/OpenSans-Bold.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Playfair Display";
       src: local("Playfair Display"),
     url("./assets/fonts/PlayfairDisplay-Regular.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
@@ -38,6 +41,7 @@ Text Domain:	 chicdressing
     font-weight: 700;
       src: local("Playfair Display Bold"),
     url("./assets/fonts/PlayfairDisplay-Bold.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
@@ -45,12 +49,42 @@ Text Domain:	 chicdressing
     font-style: italic;
       src: local("Playfair Display Italic"),
     url("./assets/fonts/PlayfairDisplay-Italic.ttf") format("truetype");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Kalam";
       src: local("Kalam Bold"),
     url("./assets/fonts/Kalam-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+      src: local("opensans"),
+    url("./assets/fonts/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Open Sans";
+      src: local("opensans"),
+    url("./assets/fonts/memtYaGs126MiZpBA-UFUIcVXSCEkx2cmqvXlWqWuU6FxZCJgg.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Kalam";
+      src: local("kalam"),
+    url("./assets/fonts/YA9dr0Wd4kDdMthROCfhsCkA.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Fontello";
+      src: local("fontello"),
+    url("./assets/fonts/fontello.woff2") format("woff2");
+    font-display: swap;
 }
 
 body .page-content, .page-content select, .page-content input, .page-content textarea, .page-content .post-author a, .page-content .ashe-widget a, .page-content .comment-author {
@@ -101,4 +135,12 @@ body .header-logo a{
 #chic-products ul.products li.product{
     background: #f6f6f6;
     padding-bottom: 20px;
+}
+
+div.page-content .post-date {
+color: black;
+}
+
+div.page-content .post-date, div.page-content .post-comments, div.page-content .post-author, div.page-content [data-layout*="list"] .post-author a, div.page-content .related-post-date, div.page-content .comment-meta a, div.page-content .author-share a, div.page-content .post-tags a, div.page-content .tagcloud a, div.widget_categories li, div.widget_archive li, div.ahse-subscribe-box p, div.rpwwt-post-author, div.rpwwt-post-categories, div.rpwwt-post-date, div.rpwwt-post-comments-number {
+  color: black;
 }

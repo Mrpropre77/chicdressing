@@ -67,8 +67,7 @@ class DomAnalysis
             $content =  $content . get_the_excerpt($id);
         }
 
-        $content = apply_filters('seopress_content_analysis_content', $content, $id);
-
+        // Bricks
         if (defined('BRICKS_DB_EDITOR_MODE') && ('bricks' == $theme->template || 'Bricks' == $theme->parent_theme)) {
             $page_sections = get_post_meta($id, BRICKS_DB_PAGE_CONTENT, true);
             $editor_mode   = get_post_meta($id, BRICKS_DB_EDITOR_MODE, true);
@@ -76,6 +75,8 @@ class DomAnalysis
                 $content = \Bricks\Frontend::render_data($page_sections);
             }
         }
+
+        $content = apply_filters('seopress_content_analysis_content', $content, $id);
 
         return $content;
     }

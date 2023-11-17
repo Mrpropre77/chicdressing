@@ -533,7 +533,9 @@ class TitleOption {
 
         if (null === $queried_object) {
             global $tax;
-            $currentTax = $tax->name;
+            if(property_exists($tax, 'name')) {
+                $currentTax = $tax->name;
+            }
         }
 
         if (null !== $queried_object && 'yes' === get_term_meta($queried_object->term_id, '_seopress_robots_index', true)) {
